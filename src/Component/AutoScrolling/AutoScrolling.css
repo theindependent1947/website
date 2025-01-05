@@ -1,0 +1,36 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes noti-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 10px 0px;
+}
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+.logos-slide {
+  display: inline-flex;
+  animation: 10s slide infinite linear;
+  justify-content: space-around;
+  width: 100%;
+}
+.logos-slide img {
+  height: 118px;
+  width: 140px;
+}
