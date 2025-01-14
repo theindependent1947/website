@@ -195,8 +195,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
-
-            <div className="my-20 flex justify-center item-center ">
+            <div className="my-20 custom-md:hidden flex justify-center item-center ">
               <img src={WhatWeDoImg} alt="WhatWeDoImg" />
             </div>
           </div>
