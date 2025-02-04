@@ -7,17 +7,17 @@ const ProjectsWeHaveDone = ({ projectList }) => {
       <div className="flex justify-center m-5 ">
         <div className="grid">
           <div className="m-10">
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {projectList.map((item) => (
                 <div
-                  style={{
-                    backgroundImage: `url(${item.icon})`,
-                    height: "50vh",
-                    width:"33%",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    borderRadius: "8px",
-                  }}
+                style={{
+                  backgroundImage: `url(${item.icon})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  borderRadius: "8px",
+                }}
+                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 h-64 sm:h-80 md:h-96 lg:h-128"
+              
                 >
                   <div className="p-6 flex flex-col justify-between gap-8">
                     <div>
@@ -25,7 +25,7 @@ const ProjectsWeHaveDone = ({ projectList }) => {
                         {" "}
                         {item.title}
                       </p>
-                      <p className="text-white mt-4">{item.subTitle}</p>
+                      <p className="text-white mt-4 hidden sm:block">{item.subTitle}</p>
                     </div>
                     <div>
                       <Button
