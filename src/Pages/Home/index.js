@@ -87,18 +87,21 @@ const Home = () => {
       title: "Mission to Decarbonize India: Building Benchmark",
       subTitle:
         "We are on a mission to Benchmark every building in India > 50,000 sq.ft. covered area. Energy & Water use & Carbon intensity.",
+      
     },
     {
       icon: ProjectTwoImg,
       title: "Green Care Forum: Tree plantation excursions",
       subTitle:
         "We believe in cultivating beautiful green spaces. Rooting for our trees, we plan Green Care Forum Tree Plantation Excursions.",
+        
     },
     {
       icon: ProjectThreeImg,
       title: "Cochlear Implant public awareness campaign",
       subTitle:
         "Hearing & speech disability affects 6% of India’s population, our awareness campaign help children get Cochlear Implants.",
+        
     },
   ];
 
@@ -162,7 +165,7 @@ const Home = () => {
       <div className="overflow-hidden">  <AutoScrolling images={supportersList}/></div>
       <div className="bg-[#ffac74e6]">
         <div className="flex justify-center m-5 ">
-          <div className="grid grid-cols-2">
+          <div >
             <div className="m-10">
               <div className="py-6">
                 <span>
@@ -171,7 +174,7 @@ const Home = () => {
                 <p className="inline-block px-3 font-bold">WHAT WE DO</p>
               </div>
               <br />
-              <p className="font-bold text-5xl">
+              <p className="font-bold text-3xl sm:text-4xl md:text-5xl">
                 Collaboratives come together & solve Complex Systemic Issues
               </p>
               <br />
@@ -183,7 +186,7 @@ const Home = () => {
               <br />
               <div className="flex gap-4 flex-col">
                 {whatWeDoList.map((item) => (
-                  <div className="flex gap-4">
+                  <div className=" gap-4">
                     <div className="pt-[6px] w-[50px] h-[50px]">
                       {item.icon}
                     </div>
@@ -195,7 +198,7 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="my-20 custom-md:hidden flex justify-center item-center ">
+            <div className="my-20 hidden sm: flex justify-center item-center ">
               <img src={WhatWeDoImg} alt="WhatWeDoImg" />
             </div>
           </div>
@@ -215,10 +218,11 @@ const Home = () => {
             initiatives
           </p>
         </div>
+        
         <ProjectsWeHaveDone projectList={projectList} />
       </div>
-      <div className="bg-black flex p-12">
-        <div className="w-[50%]">
+      <div className="bg-black p-6">
+        <div className>
           <div className="text-4xl text-white font-bold">
             How we spend your <br /> donations and where it <br /> goes
           </div>
@@ -231,36 +235,36 @@ const Home = () => {
             <div className="flex gap-6">
               <div className="flex gap-3 items-center">
                 <div className="w-[16px] h-[16px] bg-[#BEF3C0] rounded-sm"></div>
-                <div className="text-white">Tree Plantation</div>
+                <div className="text-white text-xs sm:text-sm">Tree Plantation</div>
               </div>
               <div className="flex gap-3 items-center">
                 <div className="w-[16px] h-[16px] bg-[#AC94F1] rounded-sm"></div>
-                <div className="text-white">Health care</div>
+                <div className="text-white text-xs sm:text-sm">Health care</div>
               </div>
               <div className="flex gap-3 items-center">
                 <div className="w-[16px] h-[16px] bg-[#FFF0CA] rounded-sm"></div>
-                <div className="text-white">Energy Sanchay</div>
+                <div className="text-white text-xs sm:text-sm">Energy Sanchay</div>
               </div>
             </div>
             <div className="flex gap-6">
               <div className="flex gap-3 items-center">
                 <div className="w-[16px] h-[16px] bg-[#F9CF64] rounded-sm"></div>
-                <div className="text-white">Sanskriti </div>
+                <div className="text-white text-xs sm:text-sm">Sanskriti </div>
               </div>
               <div className="flex gap-3 items-center">
                 <div className="w-[16px] h-[16px] bg-[#F38FBF] rounded-sm"></div>
-                <div className="text-white">VOXAGO </div>
+                <div className="text-white text-xs sm:text-sm">VOXAGO </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-[50%]">
-          <DonationGraph />
-        </div>
+        <div className="w-full mt-8">
+  <DonationGraph />
+</div>
       </div>
       <VolunteerCard
         volImg={HomeVolunteerImg}
-        title="You can contribute to provide for children with special needs!"
+        title={<span className="text-base sm:text-sm md:text-lg">{"You can contribute to provide for children with special needs!"}</span>}
       />
       <Events />
     </div>

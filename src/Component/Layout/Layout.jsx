@@ -9,7 +9,7 @@ import HomeCarousalThree from "../../assets/HomeImages/HomeCarousalThree.png";
 import HomeCarousalFour from "../../assets/HomeImages/HomeCarousalFour.png";
 import HomeCarousalFive from "../../assets/HomeImages/HomeCarousalFive.png";
 import HomeCarousalSix from "../../assets/HomeImages/HomeCarousalSix.png";
-import HomeCarousalSeven from "../../assets/HomeImages/HomeCarousalSeven.png";
+// import HomeCarousalSeven from "../../assets/HomeImages/HomeCarousalSeven.png";
 import AboutSliderImgOne from "../../assets/AboutImages/AboutSliderImgOne.png";
 import AboutSliderImgTwo from "../../assets/AboutImages/AboutSliderImgTwo.png";
 import AboutSliderImgThree from "../../assets/AboutImages/AboutSliderImgThree.png";
@@ -102,7 +102,7 @@ const Layout = (props) => {
               <div className="flex justify-center ">
                 <NavBar />
               </div>
-              <div className="text-white text-5xl font-extrabold mx-[10vw]">
+              <div className="text-white text-5xl font-extrabold mx-[1vw]">
                 Championing Change <br /> in India
               </div>
               <div className="flex gap-4 items-center mx-[10vw] justify-between">
